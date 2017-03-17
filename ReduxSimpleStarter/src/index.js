@@ -1,8 +1,10 @@
 import React, {Component}from 'react';
 import ReactDOM from 'react-dom';
+
 import SearchBar from './component/search_bar';
-import YTSearch from 'youtube-api-search';
 import VideoList from './component/video_list'
+
+import YTSearch from 'youtube-api-search';
 
 
 const API_KEY = 'AIzaSyBuBHSSHEVOw3WLJC6S7U9esn27FphVdgw';
