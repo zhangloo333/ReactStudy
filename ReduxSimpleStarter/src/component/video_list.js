@@ -10,7 +10,6 @@ const VideoList = (props) => {
  //   });
  //   return <VideoListItem video={video} />
  // })
-
  const videoItems = props.videos.map((video) => {
   //  console.log(video);
    return (
