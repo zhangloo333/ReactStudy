@@ -37,12 +37,16 @@ class SearchBar extends Component {
           <input
           value = {this.state.term}
           // onChange = {event => this.setState({term:event.target.value})}
-          onChange = {event => this.onInputChange(event.target.vaule)} />
+          // onChange = {event => this.onInputChange(event.target.vaule)}
+          //为什么不会同时的变动，应为打错了， value 打成 vaule这一点错了，所以没有找到
+          onChange = {event => this.onInputChange(event.target.value)}
+          />
         </div>
       )
     }
 
     onInputChange(term) {
+      console.log(term);
       this.setState({term});
       this.props.onSearchTermChange(term);
     }
